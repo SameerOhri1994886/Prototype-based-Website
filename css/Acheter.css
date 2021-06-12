@@ -1,0 +1,167 @@
+body{                             /* modifies the body of the HTML page... */
+    height:2200px;
+    }
+.section{                        /* sets the properties of the section/header having 3 hyperlinks and Red color background... */
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    word-spacing:130px;
+    background-color:red;
+    height: 180px;
+        }
+img{                               /* sets the properties of the Nintendo Logo Image... */
+    float: left;
+    height: 180px;
+    width: 180px;
+   }
+.sp{                             /* sets the alignment of the hyperlinks jeux,spécifications and acheter... */
+    padding-top: 100px;
+    padding-left:580px;
+   }
+.a1{                             /* sets the properties for the hyperlink Jeux... */
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+   }
+.a2{                             /* sets the properties for the hyperlink Spécifications... */
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    }
+.a3{                             /* sets the properties for the hyperlink Acheter... */
+    color:grey;
+    font-size: 28px;
+    }
+h1{                              /* sets the properties for the heading "Acheter"... */
+    padding-top: 220px;
+    color:grey;
+    font-size: 76px;
+    text-align:center;
+  }
+.para{                            /* sets the properties for the content of each image... */
+    position: absolute;
+    color:grey;
+    margin-top: 10px;
+    margin-left: 1px;
+    font-size: 24px;
+    float: left;
+     }
+table{                              /* sets the properties for the table... */
+    margin-left: 90px;
+    border-collapse: separate;
+    border: 0.5px solid red;
+    border-spacing: 1px;
+     }
+td{                                  /* sets the properties for the table data... */
+    padding-top: 1px;
+    margin-top: 1px;
+    border: 5px solid red;
+  }
+.td1{                               /* sets the properties for the content of the image 16... */
+    height:400px;
+    }
+.i1{                                 /* sets the properties for the image 18... */
+     height:128px;
+     width: 130px;
+   }
+.i2{                                   /* sets the properties for the image 19... */
+    height:135px;
+    width: 145px;
+    padding-left: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+   }
+.i3{                                  /* sets the properties for the image 20... */
+    height:144px;
+    width: 143px;
+    padding-left: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+   }
+.i4{                                   /* sets the properties for the image 21... */
+    height:145px;
+    width: 140px;
+    padding-top: 50px;
+    padding-left: 30px;
+   }
+.i5{                                    /* sets the properties for the image 22... */
+    height:140px;
+    width: 150px;
+    padding-left: 30px;
+    padding-bottom: 45px;
+   }
+        /* sets the properties for the area/section of the images 18,19,20,21,22 ...*/
+.column{
+    padding-left: 360px;
+    padding-top: 25px;
+    height:35px;
+       }
+.column1{
+    padding-left: 350px;
+    padding-top: 25px;
+    height:35px;
+        }
+.column2{
+    padding-left: 350px;
+    padding-top: 25px;
+    height:10px;
+        }
+.column3{
+    padding-left: 330px;
+    padding-top: 10px;
+    height:10px;
+        }
+.column4{
+    padding-left: 330px;
+    padding-top: 10px;
+    height:10px;
+        }
+.d1{                        /* sets the properties of the heading "Description" for each image... */
+    padding-top:1px;
+    margin-top: 0.1px;
+    font-size: 50px;
+    color:black;
+    text-align: left;
+    padding-left: 1px;
+   }
+.d2{
+    padding-top: 1px;
+    font-size: 24px;
+    color:black;
+    text-align: left;
+    float: left;
+    }
+.image{                                 /* sets the properties for image 13... */
+    width:555px; 
+    height:315px;
+    padding-top: 10px;
+    padding-left: 60px;
+      }
+.image1{                                 /* sets the properties for image 14... */
+    width:575px;
+    height:315px;
+    padding-left: 50px;
+       }
+.image2{                                  /* sets the properties for image 15... */
+    width:475px;
+    height:295px;
+    padding-left: 90px;
+       }
+.image3{                                   /* sets the properties for image 16... */
+    width:555px;
+    height:315px;
+    padding-left: 90px;
+       }
+.image4{                                    /* sets the properties for image 17... */
+    width:555px;
+    height:315px;
+    padding-left: 90px;
+       }
+
+
+          
+          
+          
+       
+       

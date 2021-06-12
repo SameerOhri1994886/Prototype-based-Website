@@ -1,0 +1,72 @@
+body{                   /* modifies the body of the HTML page... */
+    height:2000px;
+    }
+.section{
+    position: absolute;  /* sets the properties of the section/header having 3 hyperlinks and Red color background... */
+    top:0;
+    right:0;
+    left:0;
+    word-spacing:130px;
+    background-color:red;
+    height: 180px;
+        }
+img{                    /* sets the properties of the Nintendo Logo Image... */
+    float: left;
+    height: 180px;
+    width: 180px;
+   }
+.sp{                     /* sets the alignment of the hyperlinks jeux,spécifications and acheter... */
+    padding-top: 100px;
+    padding-left:580px;
+   }
+a{                
+    color: white;      /* sets the properties of all the hyperlinks... */
+    font-size: 28px;
+    text-decoration: none;
+ }
+.content{                /* sets the properties of the heading "La console 3 en 1"... */
+    padding-top: 220px;
+    text-align: center;
+    color:grey;
+    font-size: 48px;
+        }
+.image{
+    padding-top: 50px;
+    padding-left: 500px;
+    height:280px;
+    width: 450px;      
+      }
+.video{                  /* sets the properties of the heading "Vidéo d'introduction"... */
+    padding-top: 520px;
+    padding-left: 570px;
+    color:grey;
+    font-size: 36px;
+      }
+iframe{                  /* sets the properties for the youtube video embedded in the document... */
+    padding-top: 50px;
+    padding-left: 510px;
+    width: 500px;
+    height: 275px;
+    border:0px;
+      }
+.description{
+    padding-top: 180px;
+    padding-left: 320px;
+    color:grey;
+    font-size: 36px;
+            }
+h2{                     /* sets the properties for h2 heading... */
+    padding-top: 30px;
+    padding-left:100px;
+    font-size: 26px;
+    color:grey;
+    text-align: center;
+  }
+.im{
+    padding-left: 520px;
+    padding-top: 60px;
+    height:240px;
+    width: 390px;
+   }
+
+

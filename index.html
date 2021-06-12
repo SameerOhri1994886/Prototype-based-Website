@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- Tells the web browser that it is a HTML Document... -->
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
+      <!-- links the html file to the external CSS file... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Form</title>
+      <!-- Shows the title of the WebPage... -->
+    <style>
+    form{                                       /*  sets the properties of the form... */
+        background-color:slategrey;
+    }
+h1{                                         /*  modifies the heading LETs BUY... */
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+.i1{                   /* used for the image of the radio button for MasterCard... */
+        padding-left: 10px;
+   }
+.i2{                    /* used for the image of the radio button for Visa... */
+        padding-left: 10px;
+   }
+label{                      /* sets the properties of each label in the form... */
+        font-size: 25px;
+        font-family:'Times New Roman', Times, serif;
+        margin-left: 20px;
+     }
+#fname{                   /* sets the properties for the input field of First Name... */
+        background-color:lightgray ;
+        font-size: 20px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 120px;
+      }
+#lname{                   /* sets the properties for the input field of Last Name... */
+        background-color:lightgray ;
+        font-size: 20px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 123px;
+      }
+#email{                    /* sets the properties for the input field of Email... */
+        background-color:lightgrey ;
+        font-size: 20px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 172px;
+      }
+#contact{             /* sets the properties for the input field of Contact Number... */
+        background-color:lightgrey ;
+        font-size: 20px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 65px;
+        }
+#NS{                   /* sets the properties for the options within the form...*/
+        background-color:lightgrey ;
+        font-size: 20px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 105px;
+   }
+#qty{                  /* sets the properties for the input field of type Number... */
+        background-color:lightgrey ;
+        font-size: 20px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 145px;
+    }
+#rad{                  /* sets the properties for the radio buttons... */
+        margin-left: 30px;
+    }
+#card{           /* sets the properties for the input field of Name on Credit Card... */
+        background-color:lightgrey ;
+        font-size: 20px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 15px;
+     }
+#ccn{           /* sets the properties for the input field of Credit Card Number... */
+        background-color:lightgrey ;
+        font-size: 20px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 32px;
+    }
+#cvv{                 /* sets the properties for the input field of CVV... */
+        background-color:lightgrey ;
+        font-size: 20px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 180px;
+    }
+#exp{                   /* sets the properties for the input field of Expiry Date... */
+        background-color:lightgrey ;
+        font-size: 16.5px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 112px;
+    }
+input[type=submit]
+   {                          /* sets the properties for the Place Order button... */
+        margin-top:70px;
+        margin-left: 580px;
+        size: 20px;
+        font-size: 22px;
+        color:green;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+input[type=reset] 
+   {                               /* sets the properties for the Cancel button... */
+        margin-top:70px;
+        margin-left: 30px;
+        size: 20px;
+        font-size: 22px;
+        color:red;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+    </style>
+    <script>
+        // Used for including the Javascript code...
+        function ValidateForm()  // used to prevent the empty form from being submitted...
+        {
+            // variables declaration and initialisation...
+            var a = document.getElementById("fname").value;
+            var b = document.getElementById("lname").value;
+            var c = document.getElementById("email").value;
+            var d = document.getElementById("contact").value;
+            var e = document.getElementById("card").value;
+            var f = document.getElementById("ccn").value;
+            var g = document.getElementById("cvv").value;
+            if (a=="" || b=="" || c=="" || c.length()!="@"|| d=="" || d.length<10 || e=="" || f=="" 
+                || f.length<16 || g=="" || g.length<3) 
+                {
+                  alert("Form must be filled completely and appropriately"); // displays the dialog box...
+                  return false;
+                }
+        }
+    </script>
+</head>
+<body>
+    <h1>LETs BUY</h1>
+      <!-- h1 represents the heading of a particular section... -->
+    <form name="PurchasingForm" action="PythonCode.py" method="POST">
+        <!-- <form> is used for creating the form... -->
+        <label>First Name :</label>
+        <!-- <label> represents the caption for an input element... -->
+        <input type="text" id="fname" name="fname" placeholder="Enter Your First Name" required><br>
+        <!-- <input> represents a data field and placeholder represents a short hint... -->
+        <br>
+        <label>Last Name :</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter Your Last Name" required><br>
+        <br>
+        <label>Email : </label>
+        <input type="email" id="email" name="email" required><br>
+        <br>
+        <label>Contact Number : </label>
+        <input type="tel" id="contact" minlength="10" maxlength="10"name="contact" required><br>
+        <br>
+        <label>Choose Item :</label>
+        <select name="NS" id="NS">
+            <!-- <select> allows you to choose among many options... -->
+            <option>Nintendo Switch avec Joy-ConTMbleu fluo et rouge fluo</option>
+            <!-- <option> is used for creating an option... -->
+            <option>Nintendo Switch avec deux Joy-ConTMgris</option>
+            <option>Manette Nintendo Switch Pro</option>
+            <option>Manettes Joy-ConTM</option>
+            <option>Support de recharge inclinable Nintendo Switch</option>
+        </select><br>
+        <br>
+        <label>Quantity :</label>
+        <input type="number" min="1" name="qty" id="qty"><br>
+        <!-- Number is used for selecting any quantity... -->
+        <br>
+        <label>Payment :</label>
+        <br>
+        <label>Choose Card :</label> <br>
+        <br>
+        <input type="radio" name="where" id="rad" value="1">MasterCard
+        <!-- radio button is used for selecting any one option between many options... -->
+        <img class="i1" src=" MasterCard.png" height="30">
+        <!-- <img> is used for displaying an image... -->
+        <input type="radio" name="where" id="rad" value="2">Visa
+        <img class="i2" src="Visa.png" height="15">
+        <br>
+        <br>
+        <label>Name on Credit Card :</label>
+        <input type="text" id="card" name="card" required><br>
+        <br>
+        <label>Credit Card Number:</label>
+        <input type="tel" id="ccn" minlength="16" maxlength="16" name="ccn" required><br>
+        <br>
+        <label>CVV :</label>
+        <input type="tel" id="cvv" minlength="3" maxlength="3" name="cvv" required><br>
+        <br>
+        <label>Expiry Date :</label>
+        <input type="month" id="exp" name="exp" required><br>
+        <!-- month is used for displaying the month and year only not the Date... -->
+        <br>
+        <input type="submit" value="Place Order" onclick="ValidateForm()">
+        <input type="reset" value="Cancel">
+    </form>
+    &copy;2020 Nintendo. Games are property of their respective owners.
+</body>
+</html>
